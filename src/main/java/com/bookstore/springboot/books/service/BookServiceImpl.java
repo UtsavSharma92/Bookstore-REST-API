@@ -28,7 +28,9 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public Books findById(int isbn) {
 		Optional<Books> result = booksRepository.findById(isbn);
-              
+             
+                System.out.println("Book id"+isbn);
+
 		Books books = null;
 
 		if (result.isPresent())
