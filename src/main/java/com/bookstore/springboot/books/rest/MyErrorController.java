@@ -14,7 +14,9 @@ public class MyErrorController implements ErrorController  {
     @RequestMapping("/error")
     public String handleError(HttpServletRequest request) {
         
-            System.out.println("Error controller");
+        System.out.println("Printing something here");
+
+	Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
 
 	    Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
         
