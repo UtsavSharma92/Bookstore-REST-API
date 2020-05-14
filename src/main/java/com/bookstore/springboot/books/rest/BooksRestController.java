@@ -44,6 +44,8 @@ public class BooksRestController {
 	@PostMapping("/books")
 	public Books addBook(@RequestBody Books books) {
 
+System.out.println("Printing something");
+System.out.println("Print statement");
 		System.out.println("ISBN number :" + books.getIsbn());
 
 		if (books.getIsbn() == 0)
